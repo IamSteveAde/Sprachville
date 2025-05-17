@@ -9826,15 +9826,21 @@ h6,
 }
 
 .jumbotron {
-  background: 
-  linear-gradient(rgba(255, 140, 0, 0.9), rgba(255, 140, 0, 0.9)),
+ background: 
+  linear-gradient(rgba(128, 57, 19, 0.9), rgba(128, 57, 19, 0.9)), 
   url(../img/header.jpg) no-repeat center center;
+background-size: cover;
+
 
   background-size: cover;
 }
 
 .jumbotron.page-header {
-  background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/page-header.jpg), no-repeat center center;
+ background: 
+  linear-gradient(rgba(128, 57, 19, 0.9), rgba(128, 57, 19, 0.9)), 
+  url(../img/header.jpg) no-repeat center center;
+background-size: cover;
+
   background-size: cover;
 }
 
