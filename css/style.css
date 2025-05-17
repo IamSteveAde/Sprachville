@@ -10338,9 +10338,9 @@ h6,
     color: orange;
     padding: 14px 36px;
     border-radius: 30px;
-    font-weight: 600;
+   
     border: 1px solid orange;
-    font-size: 1.1rem;
+    font-size: 16px;
     text-decoration: none;
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.2s ease;
