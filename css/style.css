@@ -10282,6 +10282,9 @@ background-size: cover;
     .learner-community h2 {
       font-size: 2rem;
     }
+    #lok{
+      width: 150px;
+    }
     .avv{
       display: grid;
       align-items: center;
@@ -10297,7 +10300,9 @@ background-size: cover;
       font-size: 1rem;
     }
   }
-
+ .lol{
+      width: 220px;
+    }
   /* Container layout */
   .start-journey {
     padding: 60px 20px;
