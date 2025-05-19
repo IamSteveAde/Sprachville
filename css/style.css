@@ -70,7 +70,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #6B6A75;
+  color: black;
   text-align: left;
   background-color: #FFFFFF;
 }
@@ -9983,14 +9983,14 @@ background-size: cover;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  background: #2878EB;
+  background: #ff7126;
   font-size: 22px;
   transition: .5s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next:hover {
-  background: #F14D5D;
+  background: #ff7126;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover {
@@ -10006,7 +10006,7 @@ background-size: cover;
 .sprachville-benefits h2 {
   font-size: 2.2rem;
   margin-bottom: 40px;
-  color: #1d3557;
+  color: #000;
 }
 
 .benefits-container {
@@ -10039,13 +10039,13 @@ background-size: cover;
 }
 
 .benefit-card:hover i {
-  color: #1d3557;
+  color: #000;
 }
 
 .benefit-card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #1d3557;
+  color: #000;
 }
 
 .benefit-card p {
@@ -10076,7 +10076,7 @@ background-size: cover;
 
 .course-card img {
   width: 100%;
-  height: 150px;
+
   object-fit: cover;
 }
 
@@ -10254,7 +10254,7 @@ background-size: cover;
     position: absolute;
     left: 0;
     top: 0;
-    color: #4caf50;
+    color: #ff7126;
     font-weight: bold;
   }
 
@@ -10345,13 +10345,13 @@ background-size: cover;
   .text-side h2 {
     font-size: 2.8rem;
     margin-bottom: 18px;
-    color: #222;
+    color: #000;
   }
   .text-side p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 30px;
-    color: #444;
+    color: black;
   }
 
   /* Button styling */
@@ -10405,7 +10405,7 @@ background-size: cover;
 
   @font-face {
   font-family: 'NeulisAlt';
-  src: url('/Neulis/Neulis-Regular.otf') format('truetype');
+  src: url('/Neulis/Neulis-Bold.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10414,12 +10414,19 @@ h1, h2, .bold-text {
 }
 @font-face {
   font-family: 'AeonikTrial';
-  src: url('/AeonikTRIAL-Bold.otf') format('truetype');
-  font-weight: bold;
+  src: url('/AeonikTRIAL-Light.otf') format('truetype');
+  font-weight: 100;
   font-style: normal;
 }
 p {
   font-family: 'AeonikTrial', sans-serif;
-  font-weight: bold;
+
 }
 
+.bus1{
+  background-color: #ff7126;
+
+}
+.bus2{
+  background-color: #dc3545;
+}
