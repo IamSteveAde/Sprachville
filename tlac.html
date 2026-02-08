@@ -49,19 +49,19 @@
     <!-- Topbar End -->
 
 
-   <header class="fixed top-4 left-0 w-full z-50">
+  <header class="fixed top-4 left-0 w-full z-50">
   <div class="max-w-5xl mx-auto px-4">
-    
+
     <!-- Floating Navbar -->
     <div
-      class="flex items-center justify-between
+      class="relative flex items-center justify-between
              bg-white/95 backdrop-blur
              rounded-full shadow-lg shadow-black/10
              px-6 py-3"
     >
 
       <!-- Logo -->
-      <a href="/" class="flex items-center">
+      <a href="/" class="flex items-center no-underline">
         <img
           src="img/Main Lockup primary.png"
           alt="The Language Advantage Conference 2026"
@@ -70,17 +70,22 @@
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-charcoal">
-        <a href="#about" class="hover:text-brand transition">About</a>
-        <a href="#speakers" class="hover:text-brand transition">Speakers</a>
-        <a href="#tickets" class="hover:text-brand transition">Tickets</a>
-        <a href="index.html" class="hover:text-brand transition">SprachVille International</a>
+      <nav
+        class="hidden md:flex items-center gap-6
+               text-sm font-medium text-charcoal"
+      >
+        <a href="#about" class="no-underline text-charcoal hover:text-brand no-underline transition">About</a>
+        <a href="#who" class="no-underline text-charcoal hover:text-brand no-underline transition">Who Should Attend</a>
+        <a href="#tickets" class="no-underline text-charcoal hover:text-brand no-underline transition">Tickets</a>
+        <a href="index.html" class="no-underline text-charcoal hover:text-brand no-underline transition" target="_blank" >
+          SprachVille International
+        </a>
 
         <a
           href="https://selar.com/19g9394774"
           class="ml-2 inline-flex items-center rounded-full
                  bg-brand px-5 py-2 text-white font-semibold
-                 hover:opacity-90 transition"
+                 no-underline hover:opacity-90 transition"
         >
           Register
         </a>
@@ -88,6 +93,7 @@
 
       <!-- Mobile Menu Button -->
       <button
+        id="menuBtn"
         class="md:hidden inline-flex items-center justify-center
                rounded-full bg-black/5 p-2 text-charcoal"
         aria-label="Open menu"
@@ -99,8 +105,36 @@
         </svg>
       </button>
 
-    </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="absolute top-full left-0 right-0 mt-4
+               hidden md:hidden
+               bg-white rounded-3xl shadow-xl
+               px-6 py-6"
+      >
+        <nav class="flex flex-col gap-4 text-sm font-medium text-charcoal">
 
+          <a href="#about" class="no-underline hover:text-brand transition">About</a>
+          <a href="#who" class="no-underline hover:text-brand transition">Who Should Attend</a>
+          <a href="#tickets" class="no-underline hover:text-brand transition">Tickets</a>
+          <a href="index.html" class="no-underline hover:text-brand transition">
+            SprachVille International
+          </a>
+
+          <a
+            href="https://selar.com/19g9394774"
+            class="mt-4 inline-flex justify-center rounded-full
+                   bg-brand px-5 py-3 text-white font-semibold
+                   no-underline hover:opacity-90 transition"
+          >
+            Register
+          </a>
+
+        </nav>
+      </div>
+
+    </div>
   </div>
 </header>
 
@@ -194,11 +228,17 @@
   </div>
 
   <!-- ORBIT BACKGROUND -->
-  <div class="absolute inset-0 pointer-events-none">
+ <section class="relative overflow-hidden">
+  <!-- ORBIT BACKGROUND -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
     <span class="orbit orbit-1"></span>
     <span class="orbit orbit-2"></span>
     <span class="orbit orbit-3"></span>
   </div>
+
+  <!-- actual content here -->
+</section>
+
 
 </section>
 
@@ -268,7 +308,7 @@
 
 </section>
 
-<section class="bg-offwhite py-28">
+<section class="bg-offwhite py-28" id="about">
   <div class="max-w-6xl mx-auto px-6">
 
     <!-- Section Header -->
@@ -522,7 +562,7 @@
   </div>
 </section>
 <section class="relative py-32 overflow-hidden
-                bg-gradient-to-br from-brand/25 via-white to-brand/10">
+                bg-gradient-to-br from-brand/25 via-white to-brand/10" id="who">
 
   <!-- soft gradient glow -->
   <div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-brand/30 rounded-full blur-[140px]"></div>
@@ -697,7 +737,7 @@
   </div>
 </section>
 
-<section class="relative py-32 bg-white overflow-hidden">
+<section class="relative py-32 bg-white overflow-hidden" id="tickets">
 
   <!-- subtle brand glow -->
   <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand/20 rounded-full blur-[160px]"></div>
@@ -1250,77 +1290,117 @@
 
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid position-relative overlay-top orgs text-white-50 py-5" style="margin-top: 90px;" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
-        <div class="container mt-5 pt-5">
-            <div class="row">
-                <div class="col-md-6 mb-5">
-                    <a href="index.html" class="navbar-brand">
-                       <img src="./img/Asset 3.png" style="width: 260px;">
-                    </a>
-                    <p class="m-0">SprachVille International is a modern language institute designed for young professionals who want to unlock global opportunities through structured, flexible language learning.</p>
-                </div>
-                <div class="col-md-6 mb-5">
-                    <h3 class="text-white mb-4">Newsletter</h3>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary px-4">Sign Up</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p ><i class="fa fa-map-marker-alt mr-2"></i>Lagos, Nigeria</p>
-                  <p ><i class="fa fa-phone-alt mr-2"></i><a style="color: white;" href="tel:+2349011616474">+2349011616474</a></p>
+   <footer class="bg-charcoal text-white/80">
 
-                   <p><i class="fa fa-envelope mr-2"></i><a style="color: white;" href="mailto:admin@sprachville.com">admin@sprachville.com</a></p>
+  <!-- Main Footer -->
+  <div class="max-w-7xl mx-auto px-6 py-24">
 
-                    <div class="d-flex justify-content-start mt-4">
-                        <a class="text-white mr-4" href="https://x.com/sprachville?s=21"><i class="fab fa-2x fa-x"></i></a>
-                        <a class="text-white mr-4" href="https://www.facebook.com/share/1T5jzAVJXG/?mibextid=wwXIfr"><i class="fab fa-2x fa-facebook-f"></i></a>
-                        <a class="text-white mr-4" href="https://www.linkedin.com/company/sprachville/"><i class="fab fa-2x fa-linkedin-in"></i></a>
-                        <a class="text-white" href="https://www.instagram.com/sprachville.ng?igsh=YTg0cGF0ZXlpcXRi"><i class="fab fa-2x fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Our Courses</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>French</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>German</a>
-                     
-                      
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white-50 mb-2" href="#home"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                        <a class="text-white-50 mb-2" href="#about"><i class="fa fa-angle-right mr-2"></i>About-Us</a>
-                        <a class="text-white-50 mb-2" href="#program"><i class="fa fa-angle-right mr-2"></i>Our-Programs</a>
-                        <a class="text-white-50 mb-2" href="#faq"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
-                        <a class="text-white-50" href="#contant"><i class="fa fa-angle-right mr-2"></i>Contact-Us</a>
-                    </div>
-                </div>
-            </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
+
+      <!-- BRAND / ABOUT -->
+      <div>
+        <img
+          src="img/Tertiary lockup primary.png"
+          alt="The Language Advantage Conference 2026"
+          class="h-10 mb-6"
+        />
+
+        <p class="text-sm leading-relaxed text-white/70">
+          The Language Advantage Conference (TLAC) is a global platform bringing
+          together educators, learners, innovators, and organizations to explore
+          how language creates opportunity across education, business, and culture.
+        </p>
+      </div>
+
+      <!-- EVENT INFO -->
+      <div>
+        <h4 class="text-white font-semibold mb-5">
+          Event Information
+        </h4>
+
+        <ul class="space-y-3 text-sm">
+          <li>📍 Lagos, Nigeria</li>
+          <li>📅 August 22, 2026</li>
+          <li>⏰ One Full Day</li>
+          <li>👥 700+ Expected Attendees</li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div>
+        <h4 class="text-white font-semibold mb-5">
+          Get in Touch
+        </h4>
+
+        <ul class="space-y-3 text-sm">
+          <li>
+            <a href="tel:+2349011616474" class="hover:text-white transition no-underline">
+              📞 +234 901 161 6474
+            </a>
+          </li>
+          <li>
+            <a href="mailto:admin@sprachville.com" class="hover:text-white transition no-underline">
+              ✉️ admin@sprachville.com
+            </a>
+          </li>
+        </ul>
+
+        <!-- Socials -->
+        <div class="flex gap-4 mt-6 text-lg">
+          <a href="https://x.com/sprachville?s=21" class="hover:text-brand transition">𝕏</a>
+          <a href="https://www.facebook.com/share/1T5jzAVJXG/?mibextid=wwXIfr" class="hover:text-brand transition">Facebook</a>
+          <a href="https://www.linkedin.com/company/sprachville/" class="hover:text-brand transition">LinkedIn</a>
+          <a href="https://www.instagram.com/sprachville.ng" class="hover:text-brand transition">Instagram</a>
         </div>
+      </div>
+
+      <!-- CTA -->
+      <div>
+        <h4 class="text-white font-semibold mb-5">
+          Be Part of TLAC 2026
+        </h4>
+
+        <p class="text-sm text-white/70 mb-6">
+          Seats are limited. Secure your spot and join a global movement redefining
+          language as advantage.
+        </p>
+
+        <a
+          href="https://selar.com/19g9394774"
+          class="inline-flex items-center justify-center
+                 rounded-full bg-brand px-6 py-3
+                 font-semibold text-white
+                 shadow-[0_15px_40px_rgba(255,113,38,0.4)]
+                 hover:-translate-y-1 transition
+                 no-underline"
+        >
+          Register Now →
+        </a>
+      </div>
+
     </div>
-    <div class="container-fluid orgs text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Sprachville International</a>. All Rights Reserved.
-                    </p>
-                </div>
-                
-            </div>
-        </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-6
+                flex flex-col md:flex-row
+                items-center justify-between
+                text-xs text-white/60">
+
+      <p>
+        © 2026 The Language Advantage Conference. Powered by SprachVille International.
+      </p>
+
+      <p class="mt-2 md:mt-0">
+        All rights reserved.
+      </p>
+
     </div>
-    <!-- Footer End -->
+  </div>
+
+</footer>
 
 
     <!-- Back to Top -->
@@ -1459,6 +1539,14 @@
     founderIndex = (founderIndex + 1) % founderDots.length;
     showFounderSlide(founderIndex);
   }, 5000);
+</script>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
 </script>
 
 
