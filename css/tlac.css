@@ -65,14 +65,14 @@
   border-radius: 9999px;
   background: rgba(255,255,255,0.75);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0,0,0,0.08);
+  
   font-weight: 500;
   color: #1f1f1f;
   transition: all 0.3s ease;
 }
 
 .attend-tab:hover {
-  background: white;
+  
   transform: translateY(-1px);
 }
 
@@ -160,4 +160,23 @@
 
 html{
     scroll-behavior: smooth;
+}
+ @font-face {
+  font-family: 'NeulisAlt';
+  src: url('/Bahnschrift-Font-Family/BAHNSCHRIFT\ 10.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, .bold-text {
+  font-family: 'NeulisAlt', sans-serif;
+}
+@font-face {
+  font-family: 'AeonikTrial';
+  src: url('/Bahnschrift-Font-Family/BAHNSCHRIFT\ 1.TTF') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+p {
+  font-family: 'AeonikTrial', sans-serif;
+
 }
